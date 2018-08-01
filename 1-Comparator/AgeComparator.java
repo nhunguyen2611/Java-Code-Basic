@@ -1,7 +1,7 @@
 package comparator;
 
 import java.util.Comparator;
-
+// Sort ascending
 class AgeComparator implements Comparator<Student>{  
 	
 	public int compare(Student s1,Student s2){  
