@@ -1,0 +1,31 @@
+public class HelloWorld{
+
+    static{
+        int x = 5; // x = 5
+        
+         
+    }
+    static int x,y;
+         
+     public static void main(String []args){
+         // x = 0, y = 0
+         
+        x--; // x= -1
+        
+        myMethod();
+        
+        // x= 1, y = 0
+        System.out.println(x+y+ ++x);
+     }
+     public static void myMethod(){
+         // x =  -1, y = 0
+         y = x++ + ++ x; // y = 0
+         //x++ = -1
+         //++x = 1
+         
+         // x = 1, y = 0
+        
+        
+        
+     }
+} 
