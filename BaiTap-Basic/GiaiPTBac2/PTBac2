@@ -1,5 +1,7 @@
+//Giai phuong trinh bac 2
+
 public class PTBac2{
-    
+   
     public static void GiaiPTBac2(int a, int b, int c){
         float x1 = 0, x2 = 0;
         if(a == 0){
