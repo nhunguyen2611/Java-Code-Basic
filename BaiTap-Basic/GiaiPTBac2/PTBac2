@@ -1,0 +1,40 @@
+public class PTBac2{
+    
+    public static void GiaiPTBac2(int a, int b, int c){
+        float x1 = 0, x2 = 0;
+        if(a == 0){
+            x1 = -c/b;
+            System.out.println("Nghiem Phuong trinh x = " + x1);
+        } else if(b == 0){
+            System.out.print("Phuong trinh vo nghiem.");
+        } else {
+            float delta = (float) b*b - 4*a*c;
+            if ( delta == 0){
+                x1 = -b / 2*a;
+                System.out.println ("Phuong trinh co nghiem kep x = " + x1);
+            } else if (delta > 0){
+                x1 = (float)(-b - Math.sqrt(delta))/(2*a);
+                x2 = (float)(-b + Math.sqrt(delta))/(2*a);
+                System.out.println("Phuong trinh co 2 nghiem phan biet");
+                System.out.println("x1 = " + x1  );
+                System.out.println("x2 = " +x2);
+            } else{
+                System.out.println("Phuong trinh vo nghiem.");
+            }
+        }
+        
+    }
+
+     public static void main(String []args){
+        Scanner sc = new Scanner (System.in);
+        int a, b, c;
+        System.out.println("Nhap vao cac phan tu cua phuong trinh bac 2 :");
+        System.out.println("Nhap a = " );
+        a = sc.nextInt();
+        System.out.println("Nhap b = " );
+        b = sc.nextInt();
+        System.out.println("Nhap c = ");
+        c = sc.nextInt();
+        GiaiPTBac2(a, b,c);
+     }
+}
