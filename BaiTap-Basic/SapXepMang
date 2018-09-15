@@ -1,0 +1,64 @@
+// Sap xep mot mang tang dan
+//Sap xep mot mang giam dan
+public class SapXep{
+    
+    public static void Show(int [] arr){
+        for (int n : arr){
+            System.out .println( n);
+        }
+    }
+    
+    // Sap xep tang dan  ACS
+    public static void SortACS(int [] arr){
+        int temp = 0;
+        for (int i = 0; i < (arr.length - 1); i ++){
+            for (int j = i +1; j < arr.length; j++){
+                if( arr[i] > arr[j]){
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+    }
+    
+    // Sap xep giam dan DECS
+     public static void SortDECS(int [] arr){
+        int temp = 0;
+        for (int i = 0; i < (arr.length - 1); i ++){
+            for (int j = i +1; j < arr.length; j++){
+                if( arr[i] < arr[j]){
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+    }
+
+     public static void main(String []args){
+         /*
+         int [] arr = { 1,5,2,0,11,3,1};
+         */
+        int n = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap vao phan tu n : ");
+        n = sc.nextInt();
+        
+        int [] arr = new int [n];
+        System.out.println("Nhap vao cac phan tu mang: ");
+        for (int i = 0; i < n; i++){
+            System.out.println("arr[%d]", i);
+            arr[i] = sc.nextInt();
+        }
+       
+        System.out.println("Mang duoc sap xep tang dan: ");
+        SortACS(arr);
+        Show(arr);
+        
+        System.out.println("Mang duoc sap xep giam dan: ");
+        SortDECS(arr);
+        Show(arr);
+        
+     }
+}
