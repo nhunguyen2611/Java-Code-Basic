@@ -1,0 +1,14 @@
+So Nguyen To:
+  Số 0 và 1 không phải là số nguyên tố. 
+  Chỉ có số 2 là số nguyên tố chẵn, tất cả các số chẵn khác không phải là số nguyên tố vì chúng chia hết cho 2.
+  
+Fibonacci:
+  Quy luật của dãy số Fibonacci: số tiếp theo bằng tổng của 2 số trước, 
+  2 số đầu tiên của dãy số là 0, 1. Ví dụ: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, …
+
+  Có 2 cách để viết chương trình dãy số Fibonacci trong java
+
+  Tính dãy số Fibonacci trong java không dùng phương pháp đệ quy
+  Tính dãy số Fibonacci trong java sử dụng phương pháp đệ quy
+  
+  => O day chi dung phuong phap de quy cho Fibonacci
