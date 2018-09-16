@@ -1,0 +1,28 @@
+public class UC_BC {
+    //Tim Uoc chung lon nhat
+    public static int UCLN (int a, int b){
+        int r = a%b;
+        if (r == 0){
+            return b;
+        } else {
+            return UCLN(b, r);
+        }
+    }
+    
+    //Tim Buoc chung nho nhat
+    public static int BCNN (int a, int b){
+        return (a*b)/ UCLN(a,b);
+    }
+    public static void main(String [] agrs){
+       System.out.println("Nhap vao 2 so a, b:");
+       System.out.println("a = ");
+       Scanner sc = new Scanner(System.in);
+       int a = sc.nextInt();
+       System.out.println("b = ");
+       int b = sc.nextInt();
+       
+       System.out.println("Uoc chung nho nhat cua 2 so a, b vua nhap: " + UCLN(a,b));
+       
+       System.out.println("Boi chung nho nhat cua 2 so a, b vua nhap: " + BCNN(a, b));
+    }
+}
