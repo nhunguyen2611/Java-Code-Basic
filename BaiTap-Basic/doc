@@ -1,0 +1,5 @@
+Đề bài: viết chương trình tìm ước số chung lớn nhất (USCLN) và bội số chung nhỏ nhất (BSCNN) của hai số nguyên dương a và b. 
+
+https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_thu%E1%BA%ADt_Euclid 
+
+Khi đã tìm được USCLN thì việc tìm BSCNN của hai số nguyên dương a và b khá đơn giản. Khi đó BSCNN(a, b) = (a * b) / UCSLN(a, b).
