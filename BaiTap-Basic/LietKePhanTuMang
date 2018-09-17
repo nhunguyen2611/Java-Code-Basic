@@ -1,0 +1,47 @@
+// Liet ke so phan tu chi xuat hien 1 lan trong mang
+// Liet ke so lan xuat hien cac phan tu trong mang
+public class HelloWorld{
+    
+    public static void addElement(Map <Integer, Integer> map, int element){
+        if(map.containsKey(element)){
+            int count = map.get(element) + 1;
+            map.put(element, count);
+        } else {
+            map.put(element, 1);
+        }
+    }
+
+     public static void main(String []args){
+         /*
+        int []arr = { 1,5,2,7,1,2,2, 9};
+        int n = 8;
+        */
+        System.out.println("Nhap vao so phan tu cua mang:");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        int [] arr = new int [];
+        System.out.println("Nhap phan tu mang:");
+        for (int i = 0; i < n; i ++){
+            System.out.printf("arr[%d]", i);
+            arr[i] = sc.nextInt();
+        }
+        Map <Integer, Integer> map = new TreeMap<Integer, Integer>();
+        
+        for (int i = 0; i < n ; i++){
+            addElement(map, arr[i]);
+        }
+        
+        System.out.println("Cac phan tu chi xuat hien 1 lan trong mang:");
+        for (Integer key : map.keySet()){
+            if (map.get(key) == 1 ) {
+                System.out.println(key);
+            }
+        }
+        
+        System.out.println("So lan xuat hien cua cac phan tu trong mang:");
+        for (Integer key: map.keySet()){
+        	System.out.printf("%d xuat hien %d lan \n ", key, map.get(key));
+        }
+     }
+}
