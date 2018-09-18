@@ -1,0 +1,6 @@
+Đề bài: Một số được gọi là số thuận nghịch nếu ta đọc từ trái sang phải hay từ phải sang trái số đó ta 
+vẫn nhận được một số giống nhau. 
+Ví dụ 123321 là một số thuận nghịch. Hãy liệt kê tất cả các số thuận nghịch có 6 chữa số.
+-----------------------------------
+
+Cách 1: Duyệt các số từ 100000 đến 999999, rồi phân tách số hiện tại thành các chữ số đơn lẻ để kiểm tra tính thuận nghịch.
