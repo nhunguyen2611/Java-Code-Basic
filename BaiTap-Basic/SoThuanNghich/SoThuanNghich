@@ -1,0 +1,26 @@
+public class SoThuanNghich{
+    
+    public static boolean isThuanNghich(int n ){
+        String numberStr = String.valueOf(n);
+        int size = numberStr.length();
+        for (int i = 0 ; i < size; i ++){
+            if (numberStr.charAt(i) != numberStr.charAt(size -i -1)){
+                return false;
+            }
+        }
+        return true;
+    }
+    
+
+     public static void main(String []args){
+        System.out.println("Co so thuan nghich co 5 chu so la:");
+        int count = 0;
+        for (int i = 10000; i < 100000; i++){
+            if(isThuanNghich(i)){
+               // System.out.println(i);
+                count ++;
+            }
+        }
+        System.out.println("Tong cong: " + count);
+     }
+}
