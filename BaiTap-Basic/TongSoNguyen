@@ -1,0 +1,20 @@
+//Đề bài: viết chương trình tính tổng các chữ số của một số nguyên n. Ví dụ: 1234 = 1 + 2 + 3 + 4 = 10.
+public class HelloWorld{
+    
+    public static int totalNumber(int n) {
+        int total= 0;
+        do{
+            total = total + (n % 10);
+            n = n / 10;
+        } while(n > 0);
+        return total;
+    }
+
+     public static void main(String []args){
+       
+        System.out.println("Nhap vao so n :");
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.printf("Tong cua %d la: %d: ", n, totalNumber(n));
+     }
+}
